@@ -23,13 +23,13 @@ TG_MAX_SIZE = 2000 * 1024 * 1024
 
 EXPIRE = 24 * 3600
 
-ENABLE_VIP = os.getenv("VIP", False)
-AFD_LINK = os.getenv("AFD_LINK", "https://afdian.net/@BennyThink")
-COFFEE_LINK = os.getenv("COFFEE_LINK", "https://www.buymeacoffee.com/bennythink")
+ENABLE_VIP = os.getenv("VIP", True)
+AFD_LINK = os.getenv("AFD_LINK", "https://afdian.net")
+COFFEE_LINK = os.getenv("COFFEE_LINK", "")
 COFFEE_TOKEN = os.getenv("COFFEE_TOKEN")
 AFD_TOKEN = os.getenv("AFD_TOKEN")
 AFD_USER_ID = os.getenv("AFD_USER_ID")
-OWNER = os.getenv("OWNER", "BennyThink")
+OWNER = os.getenv("OWNER", "vimukthioshada")
 
 # limitation settings
 AUTHORIZED_USER: str = os.getenv("AUTHORIZED_USER", "")
@@ -55,10 +55,10 @@ ENABLE_FFMPEG = os.getenv("ENABLE_FFMPEG", False)
 # Stripe setting
 PROVIDER_TOKEN = os.getenv("PROVIDER_TOKEN") or "1234"
 
-PLAYLIST_SUPPORT = os.getenv("PLAYLIST_SUPPORT", False)
+PLAYLIST_SUPPORT = os.getenv("PLAYLIST_SUPPORT", True)
 ENABLE_ARIA2 = os.getenv("ENABLE_ARIA2", False)
 
-FREE_DOWNLOAD = os.getenv("FREE_DOWNLOAD", 20)
+FREE_DOWNLOAD = os.getenv("FREE_DOWNLOAD", 9999)
 TOKEN_PRICE = os.getenv("BUY_UNIT", 20)  # one USD=20 credits
 
 RATE_LIMIT = os.getenv("RATE_LIMIT", 20)
