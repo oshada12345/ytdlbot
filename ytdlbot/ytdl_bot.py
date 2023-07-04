@@ -451,8 +451,8 @@ def download_resolution_callback(client: Client, callback_query: types.CallbackQ
 @app.on_callback_query(filters.regex(r"convert"))
 def audio_callback(client: Client, callback_query: types.CallbackQuery):
     if not ENABLE_FFMPEG:
-        callback_query.answer("Audio conversion is disabled now.")
-        callback_query.message.reply_text("Audio conversion is disabled now.")
+        callback_query.answer("😮‍💨Disabled now.")
+        callback_query.message.reply_text("😮‍💨Disabled now.")
         return
 
     callback_query.answer(f"Converting to audio...please wait patiently")
